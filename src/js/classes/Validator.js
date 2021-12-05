@@ -4,9 +4,11 @@ export default class Validator {
   }
   validateUsername() {
    if (/^[^a-z]|\d{4,}|[^\w]|[^a-z]$/.test(this.username.toLowerCase())) {
+     return false
+   }
+   else   {
      return true
    }
-   else return false
   }
 }
   
