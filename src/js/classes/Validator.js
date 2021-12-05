@@ -3,7 +3,7 @@ export default class Validator {
     this.username = username;
   }
   validateUsername() {
-   if (/^[^a-z]|\d{4,}|[^\w]|[^a-z]$/.test(this.username.toLowerCase())) {
+   if (/^[^a-z]|\d{4,}|[^\w/-]|[^a-z]$/.test(this.username.toLowerCase())) {
      return false
    }
    else   {
